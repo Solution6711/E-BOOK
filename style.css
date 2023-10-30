@@ -1,7 +1,8 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 body {
     background-color: black;
 }
@@ -35,12 +36,12 @@ header {
     background-size: 100%;
     height: 590px;
 }
-
 #txtheader {
     padding-top: 8%;
-    padding-left: 3%;
+    padding-left: 5%;
     display: flex;
     text-align: center;
+
 }
 
 
@@ -50,7 +51,7 @@ header {
     font-size: 61px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;   
+    line-height: normal;
 }
 
 .hwhite {
@@ -72,6 +73,7 @@ header {
     line-height: normal;
     margin: 0;
 }
+
 .txtp {
     color: #E87094;
     font-family: 'inter', sans-serif;
@@ -80,6 +82,7 @@ header {
     font-weight: 700;
     line-height: normal;
 }
+
 .button {
     color: #FFF;
     text-align: center;
@@ -94,13 +97,15 @@ header {
     border-radius: 42px;
     background: #E87094;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.50);
-    transition:0.3s ;
+    transition: 0.3s;
 
 }
+
 button:hover {
     background: #db1550;
 }
-.aparecermb{
+
+.aparecermb {
     display: none;
 }
 
@@ -111,12 +116,14 @@ button:hover {
     align-items: center;
     justify-content: space-around;
 }
+
 #livro {
     width: 333px;
     height: 358px;
     padding-left: 20%;
-    
+
 }
+
 /*secçao 02*/
 #sec02 {
     width: 100%;
@@ -180,7 +187,7 @@ button:hover {
     line-height: normal;
 }
 
-/*secçao 03*/
+/*secçao 03 */
 #sec03 {
     width: 100%;
     height: 924px;
@@ -198,6 +205,7 @@ button:hover {
     display: flex;
     width: 80%;
     min-height: 770px;
+    box-shadow: 0 10px 20px #E87094;
 }
 
 #imgs03 {
@@ -205,6 +213,34 @@ button:hover {
     height: 400px;
     padding-right: 45px;
 }
+
+/*secçao BONUS*/
+#bonus {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.bonusN {
+    color: #FFF;
+    font-family: Bebas Neue;
+    font-size: 155px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: underline  #E87094;
+}
+#txtbn{
+display: flex;
+flex-direction: column;
+gap: 30px;
+}
+#txtbn div {
+  display: flex; align-items: center;
+  gap: 20px ;
+}
+
 
 /*secçao 04*/
 #sec04 {
@@ -226,7 +262,7 @@ button:hover {
 
 #txts04 {
     width: 558px;
-    height: 690px;
+    height: 528px;
     border-radius: 28px;
     border: 4px solid #E87094;
     text-align: center;
@@ -235,7 +271,6 @@ button:hover {
     align-items: center;
     flex-direction: column;
     background: #1E1E1E
-
 }
 
 .line {
@@ -274,9 +309,10 @@ button:hover {
     display: flex;
     justify-content: space-around;
 }
+
 #fts img {
     width: 23%;
-    
+
 }
 
 /*secçao 06*/
@@ -329,161 +365,236 @@ button:hover {
     align-items: center;
     justify-content: space-around;
 }
+#whatsapp {
+    height: 70px;
+    width: 70px;
+}
+#whatsapp :hover {
+    height: 90px;
+    width: 90px;
+}
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
 
 /*mobile*/
 @media (max-width: 700px) {
     .sumiu {
         display: none;
     }
+    
+
     .aparecermb {
-        display:block
+        display: block
     }
+
     header {
-    height: 200px;
-    }  
+        height: 200px;
+        justify-content: center;
+    }
+
     #txtheader {
         text-align: left;
+        padding-top: 5%;
     }
+
     .hpink {
         font-size: 30px;
     }
+
     .hwhite {
         font-size: 30px;
     }
+
     .txtp {
         font-size: 15px;
     }
+
     .txtw {
         font-size: 15px;
     }
+
     .break {
         display: block;
     }
+
     .justify {
         padding: 0 10%;
         text-align: center;
-    } 
-    .button{
+    }
+
+    .button {
         font-size: 15px;
         width: 340PX;
     }
+
     #sec01 {
         flex-direction: column;
-        padding-left:0;
-    
+        padding-left: 0;
+
     }
+
     #sec02 {
         height: 350px;
     }
+
     #livro {
         width: 233px;
         height: 258px;
         padding-bottom: 10%;
         padding-left: 0;
     }
+
     #reasons {
         display: none;
     }
+
     #fs02 {
         padding-top: 10%;
     }
+
     .mbb {
         padding-bottom: 5%;
     }
+
     .txts02f {
         font-size: 15px;
     }
-    
-    #s03box{
+
+    #s03box {
         flex-direction: column;
         align-items: center;
         padding-bottom: 5%;
     }
-    #imgs03{
+
+    #imgs03 {
         width: 80%;
         height: 80%;
         padding-right: 0;
         padding-bottom: 10%;
         padding-top: 10%;
     }
+
     #fs02 button {
         margin-bottom: 40%;
+    }
+    #bonus {
+        margin-top: 0;
+        flex-direction: column;
+    }
+    .bonusN {
+        font-size: 80px;
+    }
+
+    #txtbn{
+    gap: 20px;
+    margin-bottom: 10%;
+    }
+    #txtbn div {
+      display: flex; align-items: center;
+      gap: 20px ;
     }
     #sec04 {
         height: 450px;
     }
+
     #s04box {
-      width: 80%;
-      height: 420px;
+        width: 80%;
+        height: 420px;
     }
-    #txts04{
+
+    #txts04 {
         width: 450px;
         height: 400px
     }
+
     #txts04 a {
         width: 100%;
 
     }
+
     #txts04 a button {
         width: 80%;
-        font-size: 20px ;
-    } 
-    
+        font-size: 20px;
+    }
+
     #imgs04 {
         display: none;
     }
+
     .preco {
         font-size: 60px;
     }
+
     #sec05 {
         padding-top: 10%;
     }
+
     #author {
         align-items: flex-start;
         text-align: left;
         height: 350px;
     }
+
     #txts05 {
         padding-left: 40%;
-        text-align: ;
     }
+
     #fts {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-evenly;
-        
-    } 
+
+    }
+
     #fts img {
         padding-bottom: 5%;
         width: 40%;
         height: 40%;
     }
+
     #boxs05 {
         flex-direction: column;
     }
+
     .boxss {
         width: 80%;
         height: 330px;
         margin-bottom: 5%;
-    
+
     }
+
     #txt06 {
         padding: 10% 5% 0 5%;
     }
+
     #sec07 {
         padding-top: 10%;
     }
-    .spc{
-    padding-top: 20%;
-     }
-    #footer{
+
+    .spc {
+        padding-top: 20%;
+    }
+
+    .mbheader {
+        font-size: 20px;
+    }
+    .mbheader2{
+        font-size: 10px;
+    }
+
+    #footer {
         justify-content: space-evenly;
         padding-top: 2%;
         padding-bottom: 2%;
     }
+
     footer img {
         width: 30%;
         height: 20%;
     }
-  }
+}
